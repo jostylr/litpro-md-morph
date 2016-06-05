@@ -1,8 +1,10 @@
 var commonmark = require("commonmark");
 
+var infile = "strip-code.md";
+var outfile = "code-free.md";
 
 var fs = require('fs');
-var md = fs.readFileSync("strip-code.md", {encoding:"utf8"});
+var md = fs.readFileSync(infile, {encoding:"utf8"});
 
 var reader = new commonmark.Parser();
 var parsed = reader.parse(md);
@@ -24,7 +26,6 @@ while ((event = walker.next())) {
     }
 }
 
-//console.log(out);
 
 out = out.filter(function (el) {
     if (el === false) {
@@ -34,6 +35,5 @@ out = out.filter(function (el) {
     }
 });
 
-//console.log(out.join("\n"));
 
-fs.writeFileSync("code-free.md", out.join("\n"));
+fs.writeFileSync(outfile, out.join("\n"));
