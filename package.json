@@ -1,0 +1,35 @@
+{
+  "name": "md2md",
+  "description": "modifying md files",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jostylr/md2md",
+  "author": {
+    "name": "James Taylor",
+    "email": "jostylr@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jostylr/md2md.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jostylr/md2md/issues"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.12"
+  },
+  "dependencies":{
+    "commonmark" : "^0.25.1"
+  },
+  "devDependencies" : {
+    "litpro" : "^0.12.1",
+    "litpro-jshint" : "^0.2.1"
+  },
+  "scripts" : { 
+    "test" : "node ./test.js"
+  },
+  "keywords": ["literate programming"],
+  "private": true
+
+}
