@@ -1,8 +1,4 @@
-# markdown-to-markdown
+# Litpro Plugin: Markdown Morphing
 
-A quick repository to explore generating new markdown files from a given markdown file
-
-This should be fairly simple using the npm module commonmark. All the parsing
-is done and one just has to walk the tree. 
-
-testing
+This is the repository for a directive that allows for taking a litpro doc and
+transforming it into something else. 
